@@ -10,3 +10,8 @@ Features:
 - Player's previously moved tile remains highlighted in black outline
 - The change image button on top can be used to launch a dialog and change the game image from a collection of random images.
 - The change image button on a long touch opens up the solution preview of the current puzzle until the finger is pressed down.
+
+Steps:
+- git clone this repository.
+- Import project P1_tiwari_priyamvada into Android Studio or Eclipse.
+- Clean, build and run on phone through cable.
