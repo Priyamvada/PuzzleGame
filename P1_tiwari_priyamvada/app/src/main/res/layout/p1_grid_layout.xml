@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_screen"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label_change_game_img_btn_text"
+        android:id="@+id/change_img_label"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="8sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_width="@dimen/btn_height"
+        android:layout_height="@dimen/btn_height"
+        android:id="@+id/change_img_btn"
+        android:contentDescription="@string/label_change_game_img_btn_text"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:background="#dddddd"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/score_label"
+            android:id="@+id/score_label"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/score_value"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_gravity="center_horizontal"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:id="@+id/gameGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_0_0"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_0_0"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_0_1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_0_1"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_0_2"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_0_2"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_1_0"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_1_0"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_1_1"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_1_1"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_1_2"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_1_2"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_2_0"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_2_0"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_2_1"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_2_1"
+            android:padding="2dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_square_size"
+            android:layout_height="@dimen/image_square_size"
+            android:id="@+id/imageView_2_2"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="#eeeeee"
+            android:contentDescription="@string/sub_image_2_2"
+            android:padding="2dp" />
+    </GridLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/gameOptionsToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/label_new_game_btn_text"
+            android:id="@+id/new_game_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
