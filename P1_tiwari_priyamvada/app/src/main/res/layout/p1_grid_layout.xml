@@ -14,7 +14,7 @@
         android:id="@+id/change_img_label"
         android:textColor="#000000"
         android:gravity="center"
-        android:textSize="8sp"
+        android:textSize=“10sp"
         android:textStyle="normal" />
 
     <ImageView
